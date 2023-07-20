@@ -1,0 +1,15 @@
+@import './config/extend.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+@import './views/inicio';
+@import './views/mensajes';
+// Components
+@import './../components/InforCard/InfoCard';
