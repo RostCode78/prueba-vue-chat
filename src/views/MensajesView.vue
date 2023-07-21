@@ -45,7 +45,11 @@
                 </div>
 
             </div>
-            
+
+            <div class="cerrar-sesion" @click="CerrarSession">
+                <p>Cerrar Sesion como {{ nombreUsuario }}</p>
+            </div>
+
         </div>
         <div class="right">
 
@@ -217,6 +221,20 @@
                         icon: "BM"
                     },
                 ],
+                nombreUsuario: "",
+            }
+        },
+        created() {
+            this.ObtenerNombreQuery();
+        },
+        methods: {
+            ObtenerNombreQuery() {
+                this.nombreUsuario = this.$route.query.nombre || "Usuario"
+            },
+            CerrarSession() {
+                this.$router.push({
+                    name: 'Inicio'
+                })
             }
         }
     }
