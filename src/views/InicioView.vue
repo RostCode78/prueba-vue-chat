@@ -1,5 +1,5 @@
 <template>
-    <div class="containerInicio">
+    <div class="container-inicio">
         <div class="content-titulo">
             <h1>Prueba tecnica con VueJs</h1>
         </div>

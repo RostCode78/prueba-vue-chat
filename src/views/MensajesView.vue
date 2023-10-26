@@ -19,8 +19,39 @@
 
             </header>
             <div class="container-chats">
+
+                <div class="content-chats-top">
+                    <div class="content-titulo-chat">
+                        <h2>Chats</h2>
+                    </div>
+                    <div class="content-items-chat">
+                        <InfoCard
+                            v-for="chat in chatsList" 
+                            :key="chat.id"
+                            :nombre="chat.nombre"
+                            :mensaje="chat.mensaje"
+                            :fecha="chat.fecha"
+                            :icon="chat.icon"
+                        />
+                    </div>
+                </div>
+                <div class="content-chats-bottom">
+                    <div class="content-titulo-chat">
+                        <h2>Contacts</h2>
+                    </div>
+                    <div class="content-items-chat">
+                        <InfoCard 
+                            v-for="contacto in contactosList" 
+                            :key="contacto.id"
+                            :nombre="contacto.nombre"
+                            :mensaje="contacto.mensaje"
+                            :fecha="contacto.fecha"
+                            :icon="contacto.icon"
+                        />
+                    </div>
+                </div>
                 
-                <div class="content-chats">
+                <!-- <div class="content-chats-top">
                     <h2>Chats</h2>
                     <InfoCard
                         v-for="chat in chatsList" 
@@ -32,7 +63,7 @@
                     />
                 </div>
                 
-                <div class="content-chats">
+                <div class="content-chats-bottom">
                     <h2>Contacts</h2>
                     <InfoCard 
                         v-for="contacto in contactosList" 
@@ -42,7 +73,7 @@
                         :fecha="contacto.fecha"
                         :icon="contacto.icon"
                     />
-                </div>
+                </div> -->
 
             </div>
 
@@ -215,6 +246,34 @@
                     },
                     {
                         id: 5,
+                        nombre: "Bryan Murray",
+                        mensaje: "If it takes long you can mail me...",
+                        fecha: "Dec 7",
+                        icon: "BM"
+                    },
+                    {
+                        id: 6,
+                        nombre: "Bryan Murray",
+                        mensaje: "If it takes long you can mail me...",
+                        fecha: "Dec 7",
+                        icon: "BM"
+                    },
+                    {
+                        id: 7,
+                        nombre: "Bryan Murray",
+                        mensaje: "If it takes long you can mail me...",
+                        fecha: "Dec 7",
+                        icon: "BM"
+                    },
+                    {
+                        id: 8,
+                        nombre: "Bryan Murray",
+                        mensaje: "If it takes long you can mail me...",
+                        fecha: "Dec 7",
+                        icon: "BM"
+                    },
+                    {
+                        id: 9,
                         nombre: "Bryan Murray",
                         mensaje: "If it takes long you can mail me...",
                         fecha: "Dec 7",
